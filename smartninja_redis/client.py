@@ -25,7 +25,7 @@ else:  # else use TinyDB
             result_dict = self.tinydb.get(Query()["name"] == name)
 
             if result_dict and result_dict["value"]:
-                return result_dict["value"]
+                return result_dict["value"].encode()
             else:
                 return None
 
