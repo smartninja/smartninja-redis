@@ -30,7 +30,7 @@ else:  # else use TinyDB
                 return None
 
         def set(self, name, value):
-            self.tinydb.insert({"name": name, "value": value})
+            self.tinydb.upsert({"name": name, "value": value}, Query()["name"] == name)
             return True
 
     def from_url(url, db=None, **kwargs):

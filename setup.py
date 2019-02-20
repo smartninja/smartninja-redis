@@ -13,7 +13,7 @@ setuptools.setup(
         'tinydb',
         'redis',
     ],
-    version='0.1',
+    version='0.2',
     license='MIT',
     description='SmartNinja Redis - a wrapper that simulates Redis on localhost and uses real Redis in production.',
     long_description=long_description,

@@ -14,3 +14,7 @@ r_class = Redis(host="localhost")
 r_class.set(name="smart", value="ninja")
 
 print(r_class.get("smart"))
+
+r_class.set(name="smart", value="samurai")
+
+print(r_class.get("smart"))
